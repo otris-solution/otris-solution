@@ -1,6 +1,6 @@
 # OTRIS.SOLUTION
-
-Maintainable public website source for the OTRIS architecture, gateway, core flows, and clinical-wall ecosystem.
+بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+اللهُ لَطِيْفٌ بِعِبَادِهِMaintainable public website source for the OTRIS architecture, gateway, core flows, and clinical-wall ecosystem.
 
 ## Principle
 
