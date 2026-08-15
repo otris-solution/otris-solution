@@ -1,0 +1,17 @@
+export const otrisFamilies = [
+  { code: 'SYS', name: 'System Foundation', description: 'The governance and shared foundation that keeps OTRIS coherent across products and workflows.', color: '#0A2D56' },
+  { code: 'GTW', name: 'OTRIS Edge Gateway', description: 'The ingress boundary that receives signals from devices and field environments.', color: '#00B894' },
+  { code: 'CMP', name: 'Compute Platform', description: 'The execution surface that runs core transformation and orchestration responsibilities.', color: '#2563EB' },
+  { code: 'PCB', name: 'Process Control Board', description: 'Structured control surfaces for repeatable system operations and bounded process steps.', color: '#14B8A6' },
+  { code: 'NET', name: 'Network Fabric', description: 'The controlled network pathways that carry data between authorized OTRIS boundaries.', color: '#0EA5E9' },
+  { code: 'VID', name: 'Video Context', description: 'Video-preserving clinical and operational context where procedures remain visually anchored.', color: '#7C3AED' },
+  { code: 'CAM', name: 'Camera Context', description: 'Capture devices and visual streams used to preserve real-world operational context.', color: '#EC4899' },
+  { code: 'PWR', name: 'Power Systems', description: 'Power continuity and electrical safety considerations that keep infrastructure stable.', color: '#F59E0B' },
+  { code: 'CBL', name: 'Cable Systems', description: 'Physical connectivity paths that make structured device attachment reliable and inspectable.', color: '#F97316' },
+  { code: 'DSP', name: 'Display Surfaces', description: 'Presentation layers that make canonical OTRIS data visible in authorized views.', color: '#22C55E' },
+  { code: 'CTL', name: 'Control Layer', description: 'Human-facing control surfaces that steer flows without breaking evidence boundaries.', color: '#84CC16' },
+  { code: 'STG', name: 'Staging Layer', description: 'Operational staging spaces for safe preparation, review, and transition between system states.', color: '#06B6D4' },
+  { code: 'MEC', name: 'Mechanical Layer', description: 'The physical structures and deployment realities that support durable field installation.', color: '#6B7280' },
+  { code: 'SAF', name: 'Safety Layer', description: 'Cross-cutting safeguards that keep human and clinical risk visible and bounded.', color: '#EF4444' },
+  { code: 'SW', name: 'Software Layer', description: 'Application logic and tooling that implement OTRIS behavior without redefining its architecture.', color: '#8B5CF6' },
+]

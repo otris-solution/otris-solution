@@ -1,0 +1,80 @@
+.flow-card,
+.interaction-card {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.flow-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.flow-list,
+.interaction-list {
+  display: grid;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.flow-list {
+  counter-reset: flow;
+}
+
+.flow-step {
+  position: relative;
+  padding: 1rem 1rem 1rem 4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-soft);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.flow-step::before {
+  counter-increment: flow;
+  content: counter(flow);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.flow-list--compact .flow-step {
+  padding-block: 0.85rem;
+}
+
+.interaction-list {
+  counter-reset: interaction;
+}
+
+.interaction-list li {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.interaction-list li::before {
+  counter-increment: interaction;
+  content: counter(interaction);
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(212, 166, 67, 0.18);
+  color: var(--color-primary);
+  font-weight: 700;
+}

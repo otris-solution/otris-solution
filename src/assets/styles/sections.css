@@ -1,0 +1,259 @@
+.hero-section {
+  padding-top: var(--space-5);
+}
+
+.hero-statement,
+.section-heading h2 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+}
+
+.hero-statement {
+  display: grid;
+  gap: 0.1em;
+  max-width: 9ch;
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: clamp(4rem, 7vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero-statement__accent {
+  color: var(--color-gold);
+}
+
+.hero-subtitle {
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+}
+
+.hero-founder-line {
+  margin-top: var(--space-6);
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.hero-copy h1,
+.section-heading h2 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+}
+
+.hero-copy h1,
+.section-heading h2 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+}
+
+.hero-copy h1 {
+  max-width: 12ch;
+}
+
+.hero-intro,
+.section-intro,
+.site-footer__closing,
+.site-footer__principle {
+  color: var(--color-text-soft);
+}
+
+.hero-intro {
+  max-width: 60ch;
+  margin-top: var(--space-4);
+  font-size: 1.1rem;
+}
+
+.section-heading {
+  display: grid;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.section-eyebrow {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  max-width: 18ch;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.page-section--tinted {
+  background: linear-gradient(180deg, rgba(0, 184, 148, 0.05), rgba(255, 255, 255, 0));
+}
+
+.page-section--last {
+  padding-bottom: var(--space-9);
+}
+
+.hero-media,
+.info-card,
+.family-card,
+.placeholder-card,
+.flow-card,
+.interaction-card {
+  border-radius: var(--radius-card);
+}
+
+.hero-media {
+  overflow: hidden;
+}
+
+.hero-media figcaption {
+  padding: 1rem 1.25rem 1.25rem;
+  color: var(--color-text-soft);
+}
+
+.hero-highlights,
+.detail-list {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  list-style: none;
+}
+
+.hero-highlights li,
+.detail-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.hero-highlights li::before,
+.detail-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.info-card,
+.family-card,
+.flow-card,
+.interaction-card,
+.placeholder-card {
+  padding: var(--space-5);
+}
+
+.info-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.info-card--status {
+  align-content: start;
+}
+
+.meta-line,
+.status-note,
+.section-footnote,
+.flow-note,
+.interaction-note,
+.family-card__code,
+.site-footer__principle {
+  color: var(--color-text-soft);
+}
+
+.status-chip,
+.boundary-pill,
+.privacy-pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 2rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.split-section {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.9fr);
+  align-items: center;
+}
+
+.placeholder-card {
+  gap: var(--space-4);
+  display: grid;
+  min-height: 100%;
+}
+
+.placeholder-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 18rem;
+  border-radius: var(--radius-soft);
+  background: radial-gradient(circle at top, rgba(212, 166, 67, 0.22), transparent 45%), linear-gradient(135deg, rgba(10, 45, 86, 0.96), rgba(0, 184, 148, 0.88));
+  color: #fff;
+  overflow: hidden;
+}
+
+.placeholder-orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.placeholder-orbit-a {
+  width: 10rem;
+  height: 10rem;
+}
+
+.placeholder-orbit-b {
+  width: 15rem;
+  height: 15rem;
+}
+
+.placeholder-mark {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.placeholder-card figcaption {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.family-grid,
+.authorized-views__grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.family-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.family-card__accent {
+  display: block;
+  width: 100%;
+  height: 0.55rem;
+  border-radius: var(--radius-pill);
+}
+
+.authorized-views,
+.clinical-wall-stack {
+  display: grid;
+  gap: var(--space-5);
+}

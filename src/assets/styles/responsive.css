@@ -1,0 +1,80 @@
+@media (min-width: 720px) {
+  .card-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-grid--three,
+  .authorized-views__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .family-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  .family-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1039px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .brand {
+    max-width: calc(100% - 4.75rem);
+  }
+}
+
+@media (max-width: 719px) {
+  .container {
+    width: min(100% - 1.25rem, var(--container-width));
+  }
+
+  .section-shell,
+  .site-footer__inner,
+  .hero-grid {
+    padding-block: var(--space-7);
+  }
+
+  .brand {
+    max-width: calc(100% - 4.5rem);
+  }
+
+  .brand__text strong {
+    font-size: 1.25rem;
+  }
+
+  .brand__text small {
+    font-size: 0.5rem;
+    letter-spacing: 0.025em;
+  }
+
+  .hero-grid,
+  .split-section,
+  .architecture-grid,
+  .hero-brand {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-statement {
+    max-width: none;
+    font-size: clamp(3rem, 12vw, 4.2rem);
+  }
+
+  .section-heading h2,
+  .hero-copy h1 {
+    max-width: none;
+  }
+
+  .family-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
